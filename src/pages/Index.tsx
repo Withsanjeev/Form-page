@@ -1,13 +1,19 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from "react";
+import Header from "../components/ExternalAgency/Header";
+import ExternalAgencyForm from "../components/ExternalAgency/ExternalAgencyForm";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+      <div className="max-w-[1440px] w-full bg-white mx-auto my-0 max-md:max-w-[991px] max-sm:max-w-screen-sm">
+        <Header />
+        <ExternalAgencyForm />
       </div>
-    </div>
+    </>
   );
 };
 
